@@ -178,7 +178,7 @@ const CareerAdvice = () => {
   const currentContents = tabContents[activeTab];
 
   return (
-    <div className="max-w-screen-xl mx-auto py-16 space-y-6">
+    <div className="max-w-screen-xl mx-auto py-16 space-y-6 px-4 lg:px-0">
       <h1 className="text-4xl font-semibold">
         Career advice
         <span className="font-light"> from Hays </span>

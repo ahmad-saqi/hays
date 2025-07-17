@@ -2,8 +2,8 @@ import { Apple, Facebook, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="max-w-screen-xl mx-auto py-10 space-y-8">
-      <div className="grid grid-cols-4">
+    <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div className="flex flex-col gap-4">
           <a href="#" className="text-white hover:underline">
             Media
@@ -23,10 +23,10 @@ const Footer = () => {
             Sitemap
           </a>
           <a href="#" className="text-white hover:underline">
-            Find Us{" "}
+            Find Us
           </a>
           <a href="#" className="text-white hover:underline">
-            Accessibility{" "}
+            Accessibility
           </a>
           <a href="#" className="text-white hover:underline">
             Cookie Preferences
@@ -48,37 +48,37 @@ const Footer = () => {
             Browse Local Jobs
           </a>
           <div className="flex gap-4 text-white">
-            <Linkedin />
-            <Facebook />
-            <Twitter />
+            <Linkedin className="w-5 h-5" />
+            <Facebook className="w-5 h-5" />
+            <Twitter className="w-5 h-5" />
           </div>
         </div>
       </div>
       <div className="h-[1px] bg-white"></div>
-      <div className="text-white flex justify-between items-end">
-        <p>
+      <div className="text-white flex flex-col md:flex-row justify-between items-start md:items-end gap-6">
+        <p className="text-sm md:text-base max-w-md">
           Manage your profile, job searches and alerts from anywhere and
           anytime.
         </p>
-        <div className="flex  gap-2">
-          <div className="flex items-center gap-2 border border-white py-1 px-3 w-fit rounded-lg bg-black">
-            <Apple />
+        <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+          <div className="flex items-center gap-2 border border-white py-1 px-3 w-full sm:w-fit rounded-lg bg-black">
+            <Apple className="w-5 h-5" />
             <div>
               <p className="text-[8px]">Download on the </p>
-              <p className="text-lg font-semibold">App Store</p>
+              <p className="text-sm sm:text-lg font-semibold">App Store</p>
             </div>
           </div>
-          <div className="flex items-center gap-2 border border-white py-1 px-3 w-fit rounded-lg bg-black">
-            <Apple />
+          <div className="flex items-center gap-2 border border-white py-1 px-3 w-full sm:w-fit rounded-lg bg-black">
+            <Apple className="w-5 h-5" />
             <div>
               <p className="text-[8px]">Get it on</p>
-              <p className="text-lg font-semibold">Google Play</p>
+              <p className="text-sm sm:text-lg font-semibold">Google Play</p>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;
